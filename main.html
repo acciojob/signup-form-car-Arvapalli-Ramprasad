@@ -17,12 +17,19 @@
 			<input type="email" required id="email" placeholder="Email">
 		</label>
 
-		<label for="gender_m, gender_f">Gender
-			<input type="radio" required id="gender_m, gender_f">
+		<label>Gender
+			<input type="radio" required id="gender_m" value="male" name="gender">Male
+			<input type="radio" required id="gender_f" value="female" name="gender">Female
 		</label>
 
 		<label for="cars">Car Brands
-			<input type="select" required id="cars" placeholder="--Please choose an option--">
+			 <select required id="cars">
+                <option value="" disabled selected>--Please choose an option--</option>
+                <option value="toyota">Toyota</option>
+                <option value="ford">Ford</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+            </select>
 		</label>
 
 		<label for="age">Age
